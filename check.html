@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Check Another Server - Rice Network</title>
     <style>
+        /* Your existing styles */
         body {
             font-family: 'Arial', sans-serif;
             background: linear-gradient(to right, #3a1f6d, #2b0a40);
@@ -77,3 +78,47 @@
             font-size: 1.1em;
             background: rgba(0, 0, 0, 0.5);
             border: 1px solid #b23aee;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #b23aee;
+            color: #ffffff;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #a12fdd;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Check Another Server</h1>
+        </div>
+        <div class="server-check">
+            <input type="text" id="server-address" placeholder="Enter server address">
+            <button id="check-server">Check Status</button>
+            <div class="result" id="result">Results will be displayed here.</div>
+        </div>
+        <button class="button" onclick="window.location.href='index.html'">Back to Main Status</button>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="check.js"></script>
+</body>
+</html>
