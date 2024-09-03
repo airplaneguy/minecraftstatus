@@ -20,6 +20,7 @@
         .container {
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
             align-items: flex-start;
             background-color: rgba(43, 10, 64, 0.9);
             border-radius: 12px;
@@ -35,6 +36,9 @@
             flex: 2;
             margin-right: 20px;
             max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .header {
             margin-bottom: 20px;
@@ -65,8 +69,9 @@
         .info-container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center;
             margin-bottom: 20px;
+            width: 100%;
         }
         .info {
             background-color: rgba(0, 0, 0, 0.7);
@@ -148,8 +153,8 @@
             100% { transform: scale(1); }
         }
         @keyframes slideIn {
-            from { transform: translateX(30px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
         @media (max-width: 768px) {
             .info {
