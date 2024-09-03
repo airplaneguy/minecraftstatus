@@ -20,7 +20,7 @@
         .container {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: center;
             align-items: flex-start;
             background-color: rgba(43, 10, 64, 0.9);
             border-radius: 12px;
@@ -30,14 +30,15 @@
             width: 100%;
             box-sizing: border-box;
             animation: fadeIn 1s ease-in-out;
+            overflow: hidden;
         }
         .main-content {
             flex: 2;
-            margin-right: 20px;
             max-width: 600px;
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-right: 20px;
         }
         .header {
             margin-bottom: 20px;
@@ -109,7 +110,7 @@
             padding: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             animation: slideIn 0.5s ease-in-out;
-            margin-top: 30px;
+            margin-top: 20px; /* Adjust this to move it down */
         }
         .server-check input[type="text"] {
             padding: 10px;
