@@ -14,7 +14,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             text-align: center;
         }
         .container {
@@ -24,16 +24,17 @@
             padding: 20px;
             max-width: 600px;
             width: 100%;
+            box-sizing: border-box;
             animation: fadeIn 1s ease-in-out;
         }
         h1 {
             color: #b23aee;
             margin-bottom: 15px;
-            font-size: 2.5em;
+            font-size: 2.2em;
             text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
         .status {
-            font-size: 1.5em;
+            font-size: 1.3em;
             margin: 15px 0;
             padding: 10px;
             border-radius: 8px;
@@ -60,12 +61,12 @@
         .info h2 {
             color: #b23aee;
             margin: 0;
-            font-size: 1.5em;
+            font-size: 1.4em;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
         .info p {
             margin: 10px 0;
-            font-size: 1.1em;
+            font-size: 1em;
         }
         .footer {
             margin-top: 20px;
@@ -100,7 +101,7 @@
         }
         .server-check .result {
             margin-top: 10px;
-            font-size: 1.2em;
+            font-size: 1.1em;
             background: rgba(0, 0, 0, 0.5);
             border: 1px solid #b23aee;
             padding: 10px;
@@ -149,3 +150,4 @@
     <script src="status.js"></script>
 </body>
 </html>
+
