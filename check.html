@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Another Server - Rice Network</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #3a1f6d, #2b0a40);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(43, 10, 64, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            max-width: 600px;
+            width: 100%;
+            box-sizing: border-box;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .header {
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #b23aee;
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .server-check {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            animation: slideIn 0.5s ease-in-out;
+            width: 100%;
+            max-width: 400px;
+        }
+        .server-check input[type="text"] {
+            padding: 10px;
+            border: 1px solid #b23aee;
+            border-radius: 4px;
+            width: 100%;
+            margin-bottom: 10px;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            font-size: 1em;
+        }
+        .server-check button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #b23aee;
+            color: #ffffff;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .server-check button:hover {
+            background-color: #a12fdd;
+        }
+        .server-check .result {
+            margin-top: 10px;
+            font-size: 1.1em;
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid #b23aee;
