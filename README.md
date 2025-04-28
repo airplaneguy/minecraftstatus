@@ -1,4 +1,4 @@
 # minecraftstatus
 
 Minecraft JAVA Status page for Rice Network, with an "other server" checker implemented. Uses mcstatus' API.
-Made 100% by me, Airplaneguy, and a LOT of help from ChatGPT!
+Rice Network is no-longer owned and operated by me. As such, this page will be archived.
